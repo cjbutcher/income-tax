@@ -12,7 +12,15 @@ module IncomeTax
       end
 
       levels year: 2015 do
+        level  11_000, "0%"
         level  31_785, "20%"
+        level 150_000, "40%"
+        remainder      "45%"
+      end
+
+      levels year: 2017 do
+        level  11_500, "0%"
+        level 45_000, "20%"
         level 150_000, "40%"
         remainder      "45%"
       end
